@@ -1,0 +1,64 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+ .wp-block-wf-testimonials  {
+    background:white; 
+
+    .editor-plain-text {
+        background: transparent;
+        color:#444;
+        border-radius: 0;
+        text-align:center;
+        &:focus {
+            color:#444;
+        }
+        
+        &::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #999;
+        }
+        &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:    #999;
+        }
+        &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:    #999;
+        }
+        &:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color:    #999;
+        }        
+    }
+
+    .testimonial-editor-item {
+        border: 1px solid rgba(0,0,0,.1);
+        background-color:rgba(255,255,255,.7);
+        padding:15px;
+
+        span.grippy {
+            content: '....';
+            width: 24px;
+            height: 26px;
+            display: inline-block;
+            overflow: hidden;
+            line-height: 5px;
+            padding: 3px 4px;
+            vertical-align: middle;
+            margin-top: -.7em;
+            margin-right: .3em;
+            font-size: 12px;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+            color: #b9b9b9;
+            text-shadow: 1px 0 1px black;
+          }
+          span.grippy::after {
+            content: '.. .. .. ..';
+          }
+    }
+
+    .carousel-control {
+        box-shadow:none;
+    }
+
+}
